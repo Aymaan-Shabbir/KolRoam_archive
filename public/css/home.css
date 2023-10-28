@@ -71,6 +71,7 @@ body {
 #heroleft .elem {
   /* margin-top: 1rem; */
   height: 6rem;
+  font-family: "Play","Courier New";
   /* background-color: red; */
   overflow: hidden;
   position: relative;
@@ -92,7 +93,7 @@ body {
 }
 #heroleft button {
   padding: 1vw 4vw;
-  font-family: "Courier New","Play","kajiro";
+  font-family: "Play","Courier New","kajiro";
   font-size: 3vw;
   margin-top: 15px;
   pointer-events: all;
