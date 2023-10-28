@@ -149,17 +149,17 @@ document.addEventListener("DOMContentLoaded", function () {
   function handleOptionClick(option) {
     switch (option) {
       case "explore":
-        window.location.href = "http://localhost:5173/places";
+        window.location.href = "/places";
         break;
       case "gallery":
-        window.location.href = "http://localhost:5173/gallery";
+        window.location.href = "/gallery";
         break;
 
       case "post":
-        window.location.href = "http://localhost:5173/login";
+        window.location.href = "/login";
         break;
       case "about":
-        window.location.href = "http://localhost:5173/about";
+        window.location.href = "/about";
         break;
 
       case "exit":
