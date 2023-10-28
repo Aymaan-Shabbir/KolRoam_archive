@@ -84,12 +84,12 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  font-family: "kajiro";
+  font-family: "Play","Courier New";
   /* margin-top: 0.5rem; */
   padding-top: 0.5rem;
   color: #ffffff;
-  font-size: 7rem;
-  font-weight: 100;
+  font-size: 4rem;
+  font-weight: 900;
 }
 #heroleft button {
   padding: 1vw 4vw;
@@ -110,6 +110,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 2px 2px;
+  z-index: 999;
 }
 
 #nav img {
