@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Comic+Neue:wght@700&family=Handjet:wght@300&family=IBM+Plex+Mono:wght@500&family=Play&family=Playpen+Sans&family=Poppins:wght@100;200&family=Source+Code+Pro:ital,wght@1,200&family=Ysabeau+SC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="nav">
+      <img src="./images/KolTour2.png" alt="Logo" />
+      <button id="menu-toggle">&#9776;</button>
+      <div id="nleft">
+        <a href="/">HOME</a>
+        <a href="/places">PLACES</a>
+        <a href="/profile">POST</a>
+
+        <a href="/gallery">GALLERY</a>
+        <a href="/about">ABOUT</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1>Login</h1>
+      <p><%= message %></p>
+      <div class="form">
+        <form method="post" action="/login">
+          <label for="username">Username:</label>
+          <input type="text" name="username" id="username" required />
+          <br />
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" required />
+          <br />
+          <button type="submit">Log In</button>
+        </form>
+      </div>
+
+      <p>New? <a href="/signup">Sign Up</a></p>
+    </div>
+
+    <script src="../js/login.js"></script>
+  </body>
+</html>

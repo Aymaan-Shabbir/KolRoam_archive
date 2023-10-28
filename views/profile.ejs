@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../css/profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Comic+Neue:wght@700&family=Handjet:wght@300&family=IBM+Plex+Mono:wght@500&family=Play&family=Playpen+Sans&family=Poppins:wght@100;200&family=Source+Code+Pro:ital,wght@1,200&family=Ysabeau+SC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="nav">
+      <img src="../images/KolTour2.png" alt="Logo" />
+      <button id="menu-toggle">&#9776;</button>
+      <div id="nleft">
+        <a href="/">HOME</a>
+        <a href="/places">PLACES</a>
+        <a href="/login">POST</a>
+
+        <a href="/gallery">GALLERY</a>
+        <a href="/about">ABOUT</a>
+      </div>
+    </div>
+
+    <div class="profile-container">
+      <h1>User Profile</h1>
+      <% if (user) { %>
+      <p>Welcome, <%= user.username %>!</p>
+      <% } %>
+      <form method="post" action="/upload-image" enctype="multipart/form-data">
+        <label for="image">Image:</label>
+        <input type="file" name="image" id="image" required />
+        <br />
+        <label for="caption">Caption:</label>
+        <input type="text" name="caption" id="caption" required />
+        <input type="hidden" name="userId" value="<%= user._id %>" />
+        <br />
+        <button type="submit">Upload Image</button>
+      </form>
+
+      <div class="profile-images">
+        <% if (images.length > 0) { %>
+        <h3>Uploaded Images</h3>
+        <ul>
+          <% images.forEach(image => { %>
+          <li>
+            <img src="/uploads/<%= image.filename%>" alt="User Image" />
+          </li>
+          <% }); %>
+        </ul>
+        <% } else { %>
+        <p>No images uploaded yet.</p>
+        <% } %>
+      </div>
+    </div>
+    <script src="../js/profile.js"></script>
+  </body>
+</html>
