@@ -79,6 +79,7 @@ body {
 .profile-container {
   margin-top: 18vh;
   display: flex;
+  width:100%;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -91,7 +92,7 @@ body {
   margin-top: 2vh;
   display: flex;
   flex-direction: column;
-
+   width:100%;
   align-items: center;
   justify-content: center;
 
