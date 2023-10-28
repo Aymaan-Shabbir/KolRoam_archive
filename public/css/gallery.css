@@ -30,7 +30,7 @@ html , body{
     z-index: 1000;
     align-items: center;
     justify-content: space-between;
-    padding: 2px 2px;
+    padding: 2px 0;
     }
     
     #nav img {
@@ -91,6 +91,7 @@ html , body{
     .about h4{
      font-family:  'Courier New';
      color: azure;
+     width:100%;
      padding: 2vh;
      font-weight: 900;
     }
@@ -99,7 +100,7 @@ html , body{
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
-      margin: 5vh 0vh;
+      margin: 5vh 0;
       
       position: relative;
     }
