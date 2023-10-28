@@ -135,7 +135,7 @@ app.post("/upload-image", upload.single("image"), async (req, res) => {
     userId: req.body.userId,
     filename: req.file.originalname,
     caption: req.body.caption,
-    link: `/uploads/${req.file.originalname}`,
+    link: `public/uploads/${req.file.originalname}`,
     likes: 0,
   });
   res.render("success", { message: "Image uploaded successfully" });
