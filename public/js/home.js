@@ -1,3 +1,33 @@
+<<<<<<< HEAD
+=======
+// Shery.imageEffect(".back", {
+//   style: 5,
+//   config: {
+//     a: { value: 2, range: [0, 30] },
+//     b: { value: 0.75, range: [-1, 1] },
+//     aspect: { value: 2.16284395530463 },
+//     gooey: { value: true },
+//     infiniteGooey: { value: true },
+//     durationOut: { value: 1, range: [0.1, 5] },
+//     durationIn: { value: 1.5, range: [0.1, 5] },
+//     displaceAmount: { value: 0.5 },
+//     masker: { value: true },
+//     maskVal: { value: 1, range: [1, 5] },
+//     scrollType: { value: 0 },
+//     geoVertex: { range: [1, 64], value: 1 },
+//     noEffectGooey: { value: false },
+//     onMouse: { value: 1 },
+//     noise_speed: { value: 0.2, range: [0, 10] },
+//     metaball: { value: 0.2, range: [0, 2] },
+//     discard_threshold: { value: 0.5, range: [0, 1] },
+//     antialias_threshold: { value: 0, range: [0, 0.1] },
+//     noise_height: { value: 0.5, range: [0, 2] },
+//     noise_scale: { value: 10, range: [0, 100] },
+//   },
+//   gooey: true,
+// });
+
+>>>>>>> 93a6cf8a858ad4ec8a884f78d13830d7b35d8ad1
 var elems = document.querySelectorAll(".elem");
 
 elems.forEach(function (elem) {
@@ -122,17 +152,17 @@ document.addEventListener("DOMContentLoaded", function () {
   function handleOptionClick(option) {
     switch (option) {
       case "explore":
-        window.location.href = "http://localhost:5173/places";
+        window.location.href = "/places";
         break;
       case "gallery":
-        window.location.href = "http://localhost:5173/gallery";
+        window.location.href = "/gallery"; 
         break;
 
       case "post":
-        window.location.href = "http://localhost:5173/login";
+        window.location.href = "/login";
         break;
       case "about":
-        window.location.href = "http://localhost:5173/about";
+        window.location.href = "/about";
         break;
 
       case "exit":
