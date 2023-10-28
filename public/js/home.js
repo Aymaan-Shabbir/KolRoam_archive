@@ -1,5 +1,3 @@
-const Shery = require("sheryjs");
-
 Shery.imageEffect(".back", {
   style: 5,
   config: {

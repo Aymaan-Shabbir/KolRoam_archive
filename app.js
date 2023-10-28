@@ -117,10 +117,14 @@ app.get("/profile/:id", async (req, res) => {
 
   try {
     const user = await User.findById(userId).exec();
-    const userImages = await Image.find({userId:req.params.id})
+    const userImages = await Image.find({ userId: req.params.id });
 
     if (user) {
-      res.render("profile", { user,images:userImages, message: "logged in successfully" });
+      res.render("profile", {
+        user,
+        images: userImages,
+        message: "logged in successfully",
+      });
     } else {
       res.status(404).send("User not found");
     }
@@ -135,7 +139,7 @@ app.post("/upload-image", upload.single("image"), async (req, res) => {
     userId: req.body.userId,
     filename: req.file.originalname,
     caption: req.body.caption,
-    link: `public/uploads/${req.file.originalname}`,
+    link: `uploads/${req.file.originalname}`,
     likes: 0,
   });
   res.render("success", { message: "Image uploaded successfully" });
